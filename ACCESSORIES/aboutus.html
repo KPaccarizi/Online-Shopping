@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>KFM ACCESSORIES | About Us</title>
+</head>
+<body>
+<!-- Header Start -->
+<div class="header">
+		<div class="container">
+			<!-- Nav Start -->
+			<div class="navbar"> 
+				<div class="logo">
+					<a href="index.html">
+						<img class="main-logo" src="image/logoKFM.png" width="200px">
+					</a>
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="account.html">My Account</a></li>
+					</ul>
+				</nav>
+				<a href="cart.html">
+					<img src="images/cart.png" alt="" width="30px" height="30px"/>
+				</a>
+				<img src="images/menu.png" alt="" class="menu-icon" onclick="menuToggle()">
+			</div>
+			<!-- Nav End -->
+		</div>
+	</div>
+
+    <div class="wrap">
+		<div class="about-logo">
+			<article>
+				<a href="index.html"><h2>ABOUT US</h2></a><br>
+				<img src="Image/logoKFM.png">
+				<h5 class="text-white">KFM ACCESSORIES</h5><br>
+				<blockquote class="text-center-text-white">
+					"Welcome to KFM ACCESSORIES, your number one source for all Accessories Related product, ie: Bags, Glasses, Jewellery, Hats etc. We're dedicated to giving you the very best of our quality products, with a focus on three characteristics ie: dependability, customer service and uniqueness.
+Founded in 2022 by KFM COMPANY , KFM ACCESSORIES has come a long way from its beginnings".
+				</blockquote><br><br>
+				<p class = "text-white">QUALITY is our responsibility.</p><br><br><br>
+			</article>
+		</div>
+	</div>
+	
+       
+
+	<!-- Footer Start -->
+	    <div class="footer">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="footer-col-1">
+	    				<h3>Download our App</h3>
+	    				<p>Download App for Android and iOS mobile phone.</p>
+	    				<div class="app-logo">
+	    					<img src="images/play-store.png" alt="">
+	    					<img src="images/app-store.png" alt="">
+	    				</div>
+	    			</div>
+	    			<div class="footer-col-2">
+	    				<img src="image/logoKFM.png" alt="">
+	    				<p>Our purpose is to give the best quality product to the custoner and bring them back and make them happy!</p>
+	    			</div>
+	    			<div class="footer-col-3">
+	    				<h3>Useful Links</h3>
+	    				<ul>
+	    					<li>Coupons</li>
+	    					<li>Blog</li>
+	    					<li>Return Policy</li>
+	    					<li>Join Affiliate</li>
+	    				</ul>
+	    			</div>
+	    			<div class="footer-col-4">
+	    				<h3>Follow Us</h3>
+	    				<ul>
+	    					<li>Instagram</li>
+	    					<li>Twitter</li>
+	    					<li>Facebook</li>
+	    					<li>Youtube</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<hr>
+	    		<p class="copyright">Copyright &copy; 2022 - www.kfmaccessories.com</p>
+	    	</div>
+	    	
+	    </div>
+	<!-- Footer End -->
+
+
+<!-- Template JS -->
+
+
+<script>
+	//Navbar Menu
+
+     var MenuItems = document.getElementById("MenuItems");
+
+     MenuItems.style.maxHeight == "0px";
+
+
+     function menuToggle(){
+     	if(MenuItems.style.maxHeight == "0px"){
+     		MenuItems.style.maxHeight = "200px";
+     	} else{
+     		MenuItems.style.maxHeight = "0px";
+     	}
+     }
+     
+
+
+
+	var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+
+</body>
+</html>
